@@ -3,6 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime as dt
 from pandas_datareader import data as pdr
+import yfinance as yf
+
+yf.pdr_override()
 
 # import data
 def get_data(stocks, start, end):
